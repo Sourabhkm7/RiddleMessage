@@ -28,3 +28,12 @@ declare module 'next-auth' {
         username?: string;
     }
 }
+
+declare module 'next-auth/jwt' {
+    interface JWT {
+        _id?: string;
+        isVerified?: string;
+        isAcceptingMessages?: boolean;
+        username?: string;
+    }
+}   
